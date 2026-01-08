@@ -1,0 +1,30 @@
+{
+  "name": "workout-tracker-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/index.css -o ./src/tailwind.generated.css --config tailwind.config.js",
+    "watch:css": "npx tailwindcss -i ./src/index.css -o ./src/tailwind.generated.css --config tailwind.config.js --watch",
+    "start": "npm run build:css && craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.3.3"
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  }
+}
